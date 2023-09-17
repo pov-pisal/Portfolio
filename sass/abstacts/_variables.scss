@@ -1,0 +1,47 @@
+$bg-clr: rgb(230, 218, 206);
+$bg-white: #fff;
+$primary-clr: rgb(244, 237, 231);
+$secondary-clr: #0050ff;
+$text-clr: black;
+$yello: #eea302;
+$red: #ff3b25;
+$lightblue: #80d8da;
+
+.btn {
+    padding: 8px 25px;
+    background: $secondary-clr;
+    border-radius: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    border: $secondary-clr 2px solid;
+    transition: 0.5s;
+    margin-right: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+
+    &:hover {
+        background: #fff;
+        color: #000;
+    }
+}
+
+.btn-black {
+    padding: 8px 25px;
+    background: transparent;
+    border-radius: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: $text-clr;
+    border: $text-clr 2px solid;
+    transition: 0.5s;
+    margin-right: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+
+    &:hover {
+        background: $secondary-clr;
+        color: #fff;
+        border: $secondary-clr 2px solid;
+    }
+}

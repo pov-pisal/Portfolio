@@ -1,0 +1,50 @@
+@use '../abstacts/variables'as *;
+@use '../abstacts/rest'as *;
+@use '../abstacts/breakpoint'as *;
+
+.project {
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    margin: 50px 0;
+    margin-bottom: 8rem;
+
+    img {
+        width: 280px;
+        height: auto;
+    }
+
+    p {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 100;
+        line-height: 1.5;
+    }
+
+    h4 {
+        font-family: 'Roboto', sans-serif;
+        margin-bottom: 10px;
+    }
+}
+
+@include breakpoint-up(medium) {
+
+    .card {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        img {
+            width: 400px;
+            height: auto;
+        }
+
+        p {
+            max-width: 500px;
+        }
+    }
+}
